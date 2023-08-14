@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45563bf210.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar navbarBright">
+                <img src="Images/logo.jpg" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+           <!--  <img src="Images/Intro.jpg" class="intro"> -->
+            <div class="header-text">
+                <h1>Hello! I'm <span>Dharuni R Acharya</span>...</h1>
+                <p>Inquisitive minds.. <br> Limitless possibilities.. <br> The epitome of a tech enthusiast..</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="Images/Img1.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-info">I am a CSE student in MIT, Manipal. I've always been passionate about technology and how it can improve people's lives. My interest domains include coding, web development and cybersecurity.</p>
+                    <p class="about-info">When I'm not coding, you can find me exploring nature, travelling, reading novels or watching movies. I'm a firm believer in work-life balance and strive to make it a priority in my life.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievement')">Achievement</p>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span>Website Development</span><br>Designing Websites</li>
+                            <li><span>Coding</span><br>Python, C, C++, Java</li>
+                            <li><span>Data Analytics</span><br>Descriptive data analysis</li>
+                            <li><span>Cybersecurity</span><br>Major interest in the domain of Cryptography</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Website development projects</span><br>Event calendar, STEM dashboard</li>
+                            <li><span>Hackathons and CP</span><br>Python, C, C++, Java</li>
+                            <li><span>Data Analytics</span><br>COVID-19 data analysis</li>
+                            <li><span>Cybersecurity</span><br>Solved picoCTF challenges, cryptohack challenges</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Computer Science & Engineering</span><br>2nd year, MIT, Manipal</li>
+                            <li><span>Little Rock Indian School</span><br>CBSE based schooling(I - XII)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievement">
+                        <ul>
+                            <li><span>12th CBSE board district topper</span><br>in Computer Science stream</li>
+                            <a href="https://littlerock.edu.in/cbse-results-2022/" class="btn btn2">Click here</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/coding.jpg">
+                    <div class="layer">
+                        <h3>Coding</h3>
+                        <p>Practice competitive coding with gfg and participate in hackathons</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/data.jpg">
+                    <div class="layer">
+                        <h3>Data Analytics</h3>
+                        <p>A complete project on COVID-19 which includes descriptive data analysis considering Indian subcontinent and world wide.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/web.jpg">
+                    <div class="layer">
+                        <h3>Website Development</h3>
+                        <p>Front end development of websites. Continuously learning and staying updated with the  web development trends and technologies. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/security.jpg">
+                    <div class="layer">
+                        <h3>Cybersecurity</h3>
+                        <p>Mastering the domain of cryptography. "Cryptography: Where Math Meets Security!"</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="Images/research.jpg">
+                    <div class="layer">
+                        <h3>Research</h3>
+                        <p>Exploring the uncharted: Research that breaks boundaries. Where questions find answers and ideas take flight.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/content.jpg">
+                    <div class="layer">
+                        <h3>Content Writing</h3>
+                        <p>Captivating and engaging content that drives action and delivers the intended message succinctly.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/management.jpg">
+                    <div class="layer">
+                        <h3>Management</h3>
+                        <p>Strong leadership and strategic decision-making that drives the achievement of organizational goals.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/photo.jpg">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>Capturing moments, creating memories. Unleashing my inner artist with the click of a shutter.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a class="SeeMorebtn">See more</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p class="gmail"><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Dharuni_R_Acharya_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dharuni R Acharya</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

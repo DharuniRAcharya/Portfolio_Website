@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 150vh;
+    background-image: url(Images/Intro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 0.5rem 10%;
+}
+
+#header .container{
+    padding: 0 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.logo{
+    border-radius: 50%;
+    width: 6rem;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0.6rem 1.2rem;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover{
+   font-weight: 900;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 3rem;
+}
+
+.header-text h1{
+    margin: 1rem;
+    padding-top: 0;
+    font-size: 4rem;
+}
+
+.header-text h1 span{
+    color: rgba(69, 7, 7, 0.945);
+}
+
+.header-text p{
+    padding: 1rem;
+    padding-top: 30rem;
+}
+
+#about{
+    padding: 3rem 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 35%;
+}
+
+.col-1 img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.col-2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-info{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.25rem;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 1rem 0 2rem;
+}
+
+.tab-links{
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.5s;
+}
+
+.tab-links.active::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    padding: 1%;
+}
+
+.tab-contents ul li span{
+    color: skyblue;
+    font-size: 1rem;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active{
+    display: block;
+}
+
+#portfolio{
+    padding: 3rem 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.work{
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    display: block;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgb(0,0,0,0.6), skyblue);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.layer a{
+    margin-top: 1rem;
+    color: skyblue;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    border: 1px solid skyblue;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: skyblue;
+}
+
+.SeeMorebtn{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    border: 1px solid skyblue;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.SeeMorebtn:hover{
+    background: skyblue;
+}
+
+.load-more{
+    display: none;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p.gmail{
+   margin-top: 5rem;
+}
+
+.contact-left p{
+    color: skyblue;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: skyblue;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: skyblue;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+form btn2{
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+/* .nav-bar.navbarBright{
+    background-color: #fff;
+    color: #262626;
+} */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        /* margin-top: 100%; */
+        font-size: 2rem;
+    }
+    .header-text h1{
+        font-size: 3rem;
+    }
+    .header-text p{
+        padding-top: 70%;
+    }
+    nav .fas{
+        display: block;
+        font-size: 1rem;
+    }
+    nav ul{
+        background: grey;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 3rem;
+        z-index: 2;
+        /* color: #000; */
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 1.5rem;
+        font-size: 1rem;
+        color: #000;
+    }
+    nav ul .fas{
+        position: absolute;
+        top:1.5rem;
+        left: 1.5rem;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+    .col-1{
+        margin-bottom: 2rem;
+    }
+    .col-2{
+        font-size: 1rem;
+    }
+    .tab-links{
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
